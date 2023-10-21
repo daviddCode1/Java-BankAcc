@@ -9,6 +9,7 @@ public abstract class BankAccount {
         this.accountNumber = accountNumber;
         this.customerName = customerName;
         this.balance = balance;
+        this.interest = interest;
     }
 
 
