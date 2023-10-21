@@ -2,6 +2,7 @@ public abstract class BankAccount {
     public String accountNumber;
     private String customerName;
     public double balance;
+    public double interest;
 
 
     public BankAccount(String accountNumber, String customerName, double balance) {
@@ -21,6 +22,10 @@ public abstract class BankAccount {
 
     public double getBalance() {
         return balance;
+    }
+
+    public double getInterest()   {
+        return interest;
     }
 
     public void deposit(double amount) {
@@ -45,6 +50,11 @@ public abstract class BankAccount {
         } else {
             System.out.println("Insufficient funds in account " + getAccountNumber());
         }
+    }
+
+    public void interest(double interestRate)     {
+        double interestAmount = interest * balance;
+        balance += interestAmount;
     }
 
 }
