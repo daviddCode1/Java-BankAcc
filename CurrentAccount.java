@@ -15,4 +15,9 @@ public class CurrentAccount extends BankAccount{
     public void transfer(BankAccount receiver, double amount) {
         super.transfer(receiver, amount);
     }
+
+    public void interest(double interest) {
+        super.interest(amount);
+
+    }
 }
